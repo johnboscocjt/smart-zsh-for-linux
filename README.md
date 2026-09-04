@@ -40,6 +40,24 @@ All plugins are installed from Arch packages. This project does not require a Gi
 
 See [docs/MANUAL-SETUP.md](docs/MANUAL-SETUP.md) for the complete procedure. The short version on Arch is:
 
+The one-command installer is the recommended path:
+
+```sh
+./setup.sh
+```
+
+Run individual stages when needed:
+
+```sh
+./setup.sh packages
+./setup.sh configs
+./setup.sh shell
+./setup.sh verify
+```
+
+The script never stores or accepts passwords; `sudo` prompts normally when package installation needs it.
+
+
 ```sh
 sudo pacman -S --needed zsh zsh-autocomplete zsh-autosuggestions zsh-syntax-highlighting atuin starship fastfetch
 chsh -s /usr/bin/zsh
@@ -93,6 +111,7 @@ This configuration targets Arch Linux or Omarchy, Zsh 5.9+, Ghostty, and a Nerd 
 - `configs/ghostty.config`: Ghostty appearance configuration.
 - `configs/starship.toml`: Starship prompt theme.
 - `configs/atuin.config.toml`: local Atuin search settings.
+- `setup.sh`: one-command installer with package, config, shell, and verification stages.
 - `docs/MANUAL-SETUP.md`: detailed human setup and recovery guide.
 - `docs/AI-PROMPT.md`: prompt for reproducing this setup with an AI coding agent.
 - `assets/`: screenshots of the verified result.

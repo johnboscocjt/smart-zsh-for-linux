@@ -65,6 +65,14 @@ Validation is mandatory before claiming success:
 - Restart Ghostty only after validation passes.
 
 Keep the edits minimal, show the exact files changed, and explain any package or terminal-specific adaptation.
+
+If this repository is already present, prefer its installer:
+
+```sh
+./setup.sh all
+```
+
+Use `./setup.sh packages`, `./setup.sh configs`, `./setup.sh shell`, or `./setup.sh verify` for individual stages. Do not automate password entry.
 ```
 
 ## Why This Prompt Works

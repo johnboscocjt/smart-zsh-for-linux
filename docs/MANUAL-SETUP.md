@@ -2,6 +2,23 @@
 
 This guide builds the working Smart Zsh setup on Arch Linux, Omarchy, or another Arch-based system using packaged software. It follows the video workflow while adapting the paths for Ghostty and avoiding GitHub plugin checkouts.
 
+## Quick setup
+
+From the repository directory, run the complete setup:
+
+```sh
+./setup.sh
+```
+
+The script installs packages, copies configs, sets the login shell, and verifies the result. It uses the normal interactive `sudo` prompt and never stores your password. Run one stage when changing an existing installation:
+
+```sh
+./setup.sh packages
+./setup.sh configs
+./setup.sh shell
+./setup.sh verify
+```
+
 ## 1. Install the foundation
 
 Install Zsh, the completion and visual plugins, the prompt, history tool, and banner:
