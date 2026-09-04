@@ -1,0 +1,29 @@
+# Video-style Zsh setup for Ghostty on Arch.
+export PATH="$HOME/.local/bin:$HOME/.atuin/bin:$PATH"
+
+# Starship must initialize before ZLE plugins.
+command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"
+
+# Atuin replaces Up/Ctrl-R history search.
+command -v atuin >/dev/null 2>&1 && eval "$(atuin init zsh)"
+
+# Grey history ghost text.
+export ZSH_AUTOSUGGEST_STRATEGY=(history)
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+
+# Green/red command syntax highlighting.
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+
+# Live completion must be loaded last so it owns the redraw hooks.
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+zstyle ':completion:*'              verbose yes
+zstyle ':completion:*:descriptions' format '%F{cyan}%B-- %d --%b%f'
+zstyle ':completion:*:messages'     format '%F{magenta}-- %d --%f'
+zstyle ':completion:*:warnings'     format '%F{red}-- no matches found --%f'
+zstyle ':completion:*'              group-name ''
+zstyle ':completion:*'              menu select
+LISTMAX=10000
+
+# Fastfetch banner at shell start.
+command -v fastfetch >/dev/null 2>&1 && fastfetch

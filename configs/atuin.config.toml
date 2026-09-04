@@ -1,0 +1,27 @@
+# Atuin — enhanced shell history (Ctrl-R / Up arrow)
+## Docs: https://docs.atuin.sh/configuration/config/
+
+## Search mode: prefix, fulltext, fuzzy, skim
+search_mode = "fuzzy"
+
+## Filter mode: global, host, session, directory, workspace
+filter_mode = "global"
+
+## UI style: auto, full, compact
+style = "compact"
+
+## Max lines for the search UI (0 = fullscreen)
+inline_height = 20
+
+## Show a preview of long commands
+show_preview = true
+
+## Enter exits with the selected command
+exit_mode = "return-original"
+
+## Sync (optional — create an account with `atuin register`)
+auto_sync = false
+update_check = true
+
+## Store command duration and cwd for richer search
+## (defaults are already good for most users)
