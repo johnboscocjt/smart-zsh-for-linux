@@ -1,6 +1,6 @@
 # Smart Zsh for Linux
 
-A polished Arch Linux terminal setup for Ghostty, based on the workflow demonstrated in the referenced terminal-customization video and adapted for Omarchy.
+A polished Arch Linux terminal setup for Ghostty and Omarchy.
 
 ![Live option completion](assets/live-completion-options.png)
 

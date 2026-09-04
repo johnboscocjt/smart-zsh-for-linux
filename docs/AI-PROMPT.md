@@ -3,7 +3,7 @@
 Copy the prompt below into a coding agent running on the target Linux machine.
 
 ```text
-You are configuring a real Arch Linux or Omarchy desktop for Ghostty. Build a polished, reliable terminal setup inspired by the referenced Linux terminal customization video.
+You are configuring a real Arch Linux or Omarchy desktop for Ghostty. Build a polished, reliable terminal setup with the features below.
 
 Goal:
 - Use /usr/bin/zsh as the interactive shell.

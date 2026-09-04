@@ -1,4 +1,4 @@
-# Video-style Zsh setup for Ghostty on Arch.
+# Smart Zsh setup for Ghostty on Arch.
 export PATH="$HOME/.local/bin:$HOME/.atuin/bin:$PATH"
 
 # Starship must initialize before ZLE plugins.

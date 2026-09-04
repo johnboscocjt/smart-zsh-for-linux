@@ -1,6 +1,6 @@
 # Manual Setup Guide
 
-This guide builds the working Smart Zsh setup on Arch Linux, Omarchy, or another Arch-based system using packaged software. It follows the video workflow while adapting the paths for Ghostty and avoiding GitHub plugin checkouts.
+This guide builds Smart Zsh on Arch Linux, Omarchy, or another Arch-based system using packaged software.
 
 ## Quick setup
 
