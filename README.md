@@ -19,10 +19,21 @@ A polished Arch Linux terminal setup for Ghostty and Omarchy.
 
 ## Screenshots
 
-- [Live option completion](assets/live-completion-options.png)
-- [Live file completion](assets/live-file-completion.png)
-- [Live menu selection](assets/live-menu-selection.png)
-- [Final prompt and Fastfetch](assets/final-prompt.png)
+### Live option completion
+
+![Live option completion](assets/live-completion-options.png)
+
+### Live file completion
+
+![Live file completion](assets/live-file-completion.png)
+
+### Live menu selection
+
+![Live menu selection](assets/live-menu-selection.png)
+
+### Final prompt and Fastfetch
+
+![Final prompt and Fastfetch](assets/final-prompt.png)
 
 ## Architecture
 
